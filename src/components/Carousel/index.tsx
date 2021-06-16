@@ -15,7 +15,7 @@ const Carousel = () => {
 			>
 				-
 			</CarouselButton>
-			<Slide src={`${currentSlide}.png`} />
+			<Slide alt="Carousel slide" src={`${currentSlide}.png`} />
 			<CarouselButton
 				onClick={() =>
 					currentSlide === 5
