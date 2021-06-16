@@ -40,7 +40,7 @@ const Success: React.FC<Props> = ({ toggleValidation }) => {
 	useEffect(() => {
 		makeShot(60, 0);
 		makeShot(120, 1);
-	}, []);
+	}, [makeShot]);
 
 	const getInstance = (instance: any) => {
 		confettiRef = instance;
