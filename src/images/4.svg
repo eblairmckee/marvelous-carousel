@@ -3,6 +3,14 @@
     <clipPath id="clip-Web_1280_4">
       <rect width="1280" height="800"/>
     </clipPath>
+    <style type="text/css">
+    @font-face {
+      font-family: 'MarvelRegular-Dj83';
+	src: local('MarvelRegular-Dj83'),
+		url('./fonts/MarvelRegular-Dj83.ttf') format('truetype');
+	font-weight: normal;
+    }
+  </style>
   </defs>
   <g id="Web_1280_4" data-name="Web 1280 – 4" clip-path="url(#clip-Web_1280_4)">
     <rect width="1280" height="800" fill="#fff"/>
