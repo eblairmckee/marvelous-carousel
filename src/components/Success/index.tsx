@@ -40,7 +40,8 @@ const Success: React.FC<Props> = ({ toggleValidation }) => {
 	useEffect(() => {
 		makeShot(60, 0);
 		makeShot(120, 1);
-	}, [makeShot]);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
 
 	const getInstance = (instance: any) => {
 		confettiRef = instance;
