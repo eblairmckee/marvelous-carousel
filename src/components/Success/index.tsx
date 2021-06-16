@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction, useState, useEffect } from 'react';
+import React, { Dispatch, SetStateAction, useEffect } from 'react';
 import ReactCanvasConfetti from 'react-canvas-confetti';
 import styled from 'styled-components';
 
