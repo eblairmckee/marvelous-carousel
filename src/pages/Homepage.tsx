@@ -27,6 +27,11 @@ const Homepage = () => {
 		}
 	}, [value]);
 
+	useEffect(() => {
+		setHintsEnabled(true);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
+
 	const inputChangeHandler = (inputValue: string) => {
 		setValue(inputValue);
 	};
