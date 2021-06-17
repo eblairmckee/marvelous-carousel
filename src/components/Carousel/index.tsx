@@ -30,10 +30,12 @@ const Carousel = () => {
 };
 
 const Wrapper = styled.div`
-	display: flex;
+	display: grid;
+	width: 100%;
+	grid-template-columns: auto 1fr auto;
 	border: 5px solid rgba(0, 0, 0, 0.2);
 	> {
-		height: 80vh;
+		width: 80vh;
 	}
 `;
 
@@ -47,7 +49,7 @@ const CarouselButton = styled.button`
 `;
 
 const Slide = styled.img`
-	width: 80vw;
+	width: 100%;
 `;
 
 export default Carousel;

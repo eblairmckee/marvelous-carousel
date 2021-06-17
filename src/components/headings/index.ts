@@ -22,12 +22,18 @@ export const Heading2 = styled.h2`
 	font-size: 42px;
 	text-transform: uppercase;
 	text-shadow: 3px 5px 0 rgba(0, 0, 0, 0.2);
+	@media (max-width: 747px) {
+		font-size: 24px;
+	}
 `;
 
 export const Subtitle = styled.h3`
 	color: ${({ theme }) => theme.white};
 	font-size: 36px;
 	text-shadow: 3px 5px 0 rgba(0, 0, 0, 0.2);
+	@media (max-width: 747px) {
+		font-size: 18px;
+	}
 `;
 
 export const FinePrint = styled.p`

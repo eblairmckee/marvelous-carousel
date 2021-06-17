@@ -18,7 +18,7 @@ const Homepage = () => {
 	const [value, setValue] = useState<string>();
 	const [isValidated, setIsValidated] = useState<boolean>(false);
 	const [showHint, setShowHint] = useState<boolean>(false);
-	const [hintsEnabled, setHintsEnabled] = useState<boolean>(false);
+	const [hintsEnabled, setHintsEnabled] = useState<boolean>(true);
 	const passphrase = 'arc reactor';
 
 	useEffect(() => {
@@ -26,12 +26,6 @@ const Homepage = () => {
 			setIsValidated(true);
 		}
 	}, [value]);
-
-	useEffect(() => {
-		if (new Date().getUTCDate() >= 21) {
-			setHintsEnabled(true);
-		}
-	}, []);
 
 	const inputChangeHandler = (inputValue: string) => {
 		setValue(inputValue);
@@ -45,10 +39,12 @@ const Homepage = () => {
 			<Heading2>Haven't you always wanted to ride your heroes? </Heading2>
 			<Subtitle>
 				We've assembled a carousel of animals (a team, you might say)
-				inspired by some of the multiverse's greatest heroes. Your
-				mission, should you choose to accept it (yes, we're crossing
-				references here, deal with it), is to find the secret passphrase
-				hidden within this puzzle.
+				inspired by some of the multiverse's greatest heroes.
+			</Subtitle>
+			<Subtitle>
+				Your mission, should you choose to accept it (yes, we're
+				crossing references here, deal with it), is to find the secret
+				passphrase hidden within this puzzle.
 			</Subtitle>
 			<Heading2>
 				Take her for a spin, you might find some familiar characters.

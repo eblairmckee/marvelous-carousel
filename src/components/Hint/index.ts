@@ -18,9 +18,7 @@ const pulseBlack = keyframes`
 `;
 
 export const HintButton = styled.button`
-	position: fixed;
-	bottom: 1rem;
-	right: 1rem;
+	margin-top: 3rem;
 	background: transparent;
 	border: none;
 	outline: none;

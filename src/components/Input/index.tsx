@@ -29,6 +29,10 @@ const StyledInput = styled.input`
 	&::placeholder {
 		color: rgba(255, 255, 255, 0.7);
 	}
+	@media (max-width: 747px) {
+		font-size: 18px;
+		max-width: 80vw;
+	}
 `;
 
 export default Input;
